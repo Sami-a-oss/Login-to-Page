@@ -1,0 +1,172 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  height: 100vh;
+  background: linear-gradient(white 50%, blue 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginBoxContainer {
+  background-color: green;
+  height: 75vh;
+  width: 65%;
+  display: flex;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.layout1 {
+  width: 50%;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.layout1 h1 {
+  font-size: 3.5rem;
+  color: white;
+}
+.logoImg img {
+  height: 100px;
+}
+.layout1Text {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.layout1Text p {
+  color: white;
+  font-size: 1rem;
+}
+.layout2 {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.layout2 p {
+  font-size: 2rem;
+  border-bottom: 2.5px solid blue;
+  color: blue;
+  font-weight: 600;
+}
+.inputContainer {
+  height: 3rem;
+  width: 350px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid black;
+  outline: none;
+  font-size: 1rem;
+  padding-left: 1rem;
+  border-radius: 0.5rem;
+}
+.passwordContainer {
+  /* background-color: #67AE6E; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+}
+#password {
+  height: 3rem;
+  width: 302px;
+  border: 1px solid black;
+  outline: none;
+  padding-left: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-right: none;
+}
+.eyeLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 48px;
+  border: none;
+  background-color: white;
+  border: 1px solid black;
+  border-left: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.eyeLogo img {
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+}
+.layout2 button {
+  height: 2.5rem;
+  width: 150px;
+  background-color: blue;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .loginBoxContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .loginBoxContainer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .layout1,
+  .layout2 {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .layout1 h1 {
+    font-size: 2.5rem;
+  }
+
+  .layout2 p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .layout1 h1 {
+    font-size: 2rem;
+  }
+
+  .layout2 p {
+    font-size: 1.5rem;
+  }
+
+  .inputContainer {
+    height: 2.5rem;
+    font-size: 0.9rem;
+  }
+
+  .layout2 button {
+    width: 120px;
+    height: 2.2rem;
+    font-size: 1rem;
+  }
+}
